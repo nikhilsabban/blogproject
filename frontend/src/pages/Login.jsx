@@ -21,7 +21,7 @@ export function Login(){
 
       async function userlogin(){
         try{
-            const response =await  axios.post("http://localhost:8000/api/v1/user/login" , user,{
+            const response =await  axios.post("https://blogproject-2-2k9t.onrender.com/api/v1/user/login" , user,{
               headers:{
                 "Content-Type" : "application/json",
               } ,

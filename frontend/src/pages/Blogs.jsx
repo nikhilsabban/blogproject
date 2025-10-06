@@ -11,7 +11,7 @@ export function Blogs() {
     const fetchBlogs = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/blog/get-all-blog",
+          "https://blogproject-2-2k9t.onrender.com/api/v1/blog/get-all-blog",
           { withCredentials: true }
         );
 

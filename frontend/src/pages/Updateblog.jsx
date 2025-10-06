@@ -38,7 +38,7 @@ export function Updateblog() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/v1/blog/blog/${blogId}`, {
+        const res = await axios.get(`https://blogproject-2-2k9t.onrender.com/api/v1/blog/blog/${blogId}`, {
           withCredentials: true,
         });
         if (res.data.success) {
@@ -81,7 +81,7 @@ export function Updateblog() {
     if (blogdata.thumbnail) formData.append("file", blogdata.thumbnail);
 
     try {
-      const res = await axios.put(`http://localhost:8000/api/v1/blog/${blogId}`, formData, {
+      const res = await axios.put(`https://blogproject-2-2k9t.onrender.com/api/v1/blog/${blogId}`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });
@@ -100,7 +100,7 @@ export function Updateblog() {
 
   const publishedbutton = async()=>{
     try{
-    const res = await axios.get(`http://localhost:8000/api/v1/blog/published/${blogId}`,{
+    const res = await axios.get(`https://blogproject-2-2k9t.onrender.com/api/v1/blog/published/${blogId}`,{
       withCredentials: true
     })
     if(res.data.success){
@@ -121,7 +121,7 @@ export function Updateblog() {
 
   const removebutton = async()=>{
     try{
-    const res = await axios.get(`http://localhost:8000/api/v1/blog/remove/${blogId}`,{
+    const res = await axios.get(`https://blogproject-2-2k9t.onrender.com/api/v1/blog/remove/${blogId}`,{
       withCredentials: true
     })
     if(res.data.success){

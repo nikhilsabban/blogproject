@@ -11,7 +11,7 @@ import path from "path";
 app.use(cookieParser());
 
 app.use(cors({
-  origin: true,
+  origin: "https://blogproject-2-2k9t.onrender.com",
   credentials: true
 }));
 

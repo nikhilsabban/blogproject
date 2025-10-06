@@ -8,7 +8,7 @@ export const profileatomselector = selector({
     key : "profileatomselector",
     get : async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/user/verify", {
+      const response = await axios.get("https://blogproject-2-2k9t.onrender.com/api/v1/user/verify", {
         withCredentials: true,
       });
       if (response.data.success) {
@@ -31,7 +31,7 @@ export const profileselector = selector({
   key : "profileselector",
   get : async()=>{
     try{
-     const response =await  axios.get("http://localhost:8000/api/v1/user/me" ,{
+     const response =await  axios.get("https://blogproject-2-2k9t.onrender.com/api/v1/user/me" ,{
               headers:{
                 "Content-Type" : "application/json",
               } ,

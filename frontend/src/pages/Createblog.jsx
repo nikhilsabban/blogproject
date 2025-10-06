@@ -37,7 +37,7 @@ export function Createblog() {
     const createblog = async()=>{
         setloading(true);
         try{
-            const response = await axios.post("http://localhost:8000/api/v1/blog/", {title ,category},{
+            const response = await axios.post("https://blogproject-2-2k9t.onrender.com/api/v1/blog/", {title ,category},{
                 headers : {"Content-type" : "application/json"},
                 withCredentials:true,
             })

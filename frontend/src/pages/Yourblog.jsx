@@ -31,7 +31,7 @@ export function Yourblog() {
     setLoading(true);
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/v1/blog/get-own-blog",
+        "https://blogproject-2-2k9t.onrender.com/api/v1/blog/get-own-blog",
         { withCredentials: true }
       );
       if (response.data.success) {
@@ -51,7 +51,7 @@ export function Yourblog() {
   const deleteBlog = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/v1/blog/delete/${id}`,
+        `https://blogproject-2-2k9t.onrender.com/api/v1/blog/delete/${id}`,
         { withCredentials: true }
       );
       if (response.data.success) {

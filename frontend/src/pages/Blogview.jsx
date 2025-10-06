@@ -56,7 +56,7 @@ export function Blogview() {
     const getBlog = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/v1/blog/blog/${blogid}`,
+          `https://blogproject-2-2k9t.onrender.com/api/v1/blog/blog/${blogid}`,
           { withCredentials: true }
         );
 
@@ -81,7 +81,7 @@ export function Blogview() {
 
 
   const  likeordislike = async()=>{
-    const response = await axios.get(`http://localhost:8000/api/v1/blog/${authordetail.userfind._id}/${liked ? "like" : "dislike"}` , {withCredentials:true});
+    const response = await axios.get(`https://blogproject-2-2k9t.onrender.com/api/v1/blog/${authordetail.userfind._id}/${liked ? "like" : "dislike"}` , {withCredentials:true});
 
   }
 

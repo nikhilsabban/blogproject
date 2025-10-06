@@ -32,7 +32,7 @@ export function Navbar() {
   
 
     async function logoutfnc(){
-      const response = await axios.get("http://localhost:8000/api/v1/user/logout" ,{
+      const response = await axios.get("https://blogproject-2-2k9t.onrender.com/api/v1/user/logout" ,{
         withCredentials:true,
       })
       if(response.data.success){

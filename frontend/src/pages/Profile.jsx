@@ -48,7 +48,7 @@ export function Profile() {
   useEffect(() => {
   const fetchProfile = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/user/me", {
+      const response = await axios.get("https://blogproject-2-2k9t.onrender.com/api/v1/user/me", {
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
       });
@@ -80,7 +80,7 @@ export function Profile() {
     }
     
     try{
-      const response = await axios.put("http://localhost:8000/api/v1/user/profile/update" ,formdata,{
+      const response = await axios.put("https://blogproject-2-2k9t.onrender.com/api/v1/user/profile/update" ,formdata,{
         headers:{
           "Content-Type" : "multipart/form-data"
         },
